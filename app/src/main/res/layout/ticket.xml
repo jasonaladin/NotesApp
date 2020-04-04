@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTicket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3pt"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20pt"
+            android:text="Content Preview" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+
+            <ImageView
+                android:id="@+id/ivDel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3pt"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/outline_delete_black_48" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
